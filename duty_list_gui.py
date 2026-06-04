@@ -85,12 +85,12 @@ def make_faculty_pdf(faculty_name, duties, filepath):
     )))
     story.append(Paragraph(f"<b>Faculty Name:</b> {faculty_name}", ParagraphStyle(
         "FName", parent=_styles["Normal"],
-        fontSize=12, textColor=colors.HexColor("#111111"), spaceAfter=6, alignment=1
+        fontSize=12, textColor=colors.HexColor("#111111"), spaceAfter=6, alignment=0
     )))
     story.append(Spacer(1, 0.3*cm))
     story.append(Paragraph("Exam Duty Schedule", ParagraphStyle(
         "SchHead", parent=_styles["Heading2"],
-        fontSize=11, textColor=HEADER_BG, spaceBefore=8, spaceAfter=6
+        fontSize=11, textColor=HEADER_BG, spaceBefore=8, spaceAfter=6, alignment=1
     )))
 
     table_data = [["S.No", "Exam Date", "Timings"]]
